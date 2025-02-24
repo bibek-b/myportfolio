@@ -1,0 +1,106 @@
+#contact-page{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.contact-page-title{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.client-desc{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.client-imgs{
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.client-img{
+    object-fit: cover;
+    width: 23%;
+    min-width: 9rem;
+    margin: auto;
+    padding: 0.25rem;
+}
+#clients{
+    padding: 2rem;
+}
+
+
+/* contact */
+.contact-desc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+.contact-form{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+.name, .email, .msg{
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: gainsboro;
+    resize: none;
+}
+.name, .email{
+    height: 3rem;
+}
+.submit-btn{
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 0.75rem 2rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.submit-btn:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.link:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 480px) {
+    #contact-page {
+        margin-left: 29px;
+
+    }
+}

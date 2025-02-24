@@ -1,0 +1,126 @@
+#works{
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    /* max-width: 60rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0; 
+    background-color:aliceblue;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.works-title{
+    margin: 10px 0 -30px 0;
+    font-size: 3rem;
+
+}
+.projects{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* max-width: 65rem; */
+}
+
+.works-img{
+    object-fit: contain;
+    height: 300px;
+    width: 300px;
+    margin: 0.9rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 40% ;
+}
+.works-img:hover {
+    scale: 1.1;
+}
+.works-btn{
+    margin: 3rem 0;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: black;
+    border-radius: 2rem;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-btn{
+    margin-top: -30px;
+    width: 150px;
+    height: 45px;
+    /* text-align: center; */
+    border: 2px solid black;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    background: white;
+    border-radius: 10px;
+    transition: background 1s ease-in-out;
+    cursor: pointer;
+
+}
+
+.project-btn:hover{
+    background: black;
+    color: white;
+}
+.see-more-btn {
+    margin-top: 10px;
+    width: 90px;
+    height: 30px;
+    /* text-align: center; */
+    border: 2px solid black;
+    outline: none;
+    padding: 5px;
+    font-size: 13px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    display: none;
+    
+}
+@media screen and (max-width: 585px) {
+    #works {
+        margin-left: 29px;
+    }
+    .project-btn {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .see-more-btn{
+        display: block;
+    }
+    /* Initially hide projects 3 and 4 */
+    /* transitions doesnot work in display prop */
+    .projects .project:nth-child(3),
+    .projects .project:nth-child(4) {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transform: translateY(-10px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    /* When 'show' class is added, make projects 3 and 4 visible */
+    .projects .project.show {
+        opacity: 1;
+        max-height: 500px; /* Adjust based on content */
+        transform: translateY(0);
+    }
+}

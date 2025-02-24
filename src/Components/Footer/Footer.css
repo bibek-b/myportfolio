@@ -1,0 +1,15 @@
+.footer{
+    width: 100vw;
+    height: 4rem;
+    background: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1rem;
+}
+@media screen and (max-width: 480px) {
+    .footer {
+        width: 113%;
+    }
+}

@@ -1,0 +1,118 @@
+#intro{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    top: -9rem;
+    right: -1rem;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+.intro-content{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro-content a{
+    text-decoration: none;
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 250;
+}
+
+.intro-name{
+    color: aqua;
+}
+.intro-para{
+    font-size: medium;
+    font-weight: 360;
+    letter-spacing: 1px;
+    width: 500px;
+    margin-top: 5px;
+}
+
+.btn{
+    margin: 1rem 0;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 2px solid black;
+    transition: background 1s ease-in-out;
+
+}
+.btn:hover{
+    background: black;
+    color: white;
+}
+
+@media (max-width: 840px) {
+        .bg{
+            /* height: 50vh; */
+            width: 500px;
+            height: 100px;
+            object-fit: contain;
+            right: -60px;
+            /* right: 60px; */
+            /* right: -150px; */
+            margin-top: -160px;
+            
+            /* right: 10vw;  */
+        }
+    
+        .intro-para{
+            width: 300px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .hello{
+            font-size: 20px;
+        }
+}
+
+@media (max-width: 480px) {
+    #intro{
+        margin-left: 29px;
+    }
+    .bg{
+        width: 500px;
+        height: 100px;
+        object-fit: contain;
+        right: -60px;
+        /* right: 60px; */
+        /* right: -150px; */
+        margin-top: -160px;
+        
+        /* right: 10vw;  */
+    }
+    .intro-para{
+        width: 300px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .hello{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1290px) {
+    .bg{
+        top:1px;
+        height: 90vh;
+    }
+}
