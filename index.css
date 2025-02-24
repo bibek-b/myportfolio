@@ -1,16 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto Condensed", serif;
-    scroll-behavior: smooth ;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", serif;
+  scroll-behavior: smooth;
 }
 
-body{
-    color: black;
-    overflow: hidden;
-    overflow-y: scroll;
+body {
+  color: black;
+  overflow: hidden;
+  overflow-y: scroll;
 }
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }

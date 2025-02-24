@@ -6,7 +6,7 @@ import contactIcon from "../../assets/contactIcon-white.svg";
 import workIcon from "../../assets/workIcon.svg";
 import skillsIcon from "../../assets/setting.png";
 import { useLocation } from "react-router-dom";
-import Menu from '../../assets/Menu.svg';
+import Menu from "../../assets/Menu.svg";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);

@@ -5,13 +5,10 @@ import Netflixclone from "../../assets/ProjectsImages/featuredImg/Netflixclone.p
 import Geminiclone from "../../assets/ProjectsImages/featuredImg/Geminiclone.png";
 import Glassguru from "../../assets/ProjectsImages/featuredImg/Glassguru.png";
 import Favsoc from "../../assets/ProjectsImages/featuredImg/Favsoc.png";
-// import { UserContext } from '../../Context';
 
 const Works = () => {
   const [showMore, setShowMore] = useState(false);
   let id;
-
-  // const { id } = useContext(UserContext);
 
   return (
     <section id="works">
@@ -30,21 +27,21 @@ const Works = () => {
             <button className="project-btn">View Project</button>
           </Link>
         </div>
-        <div className={`project ${showMore ? 'show' : ''}`}>
+        <div className={`project ${showMore ? "show" : ""}`}>
           <img src={Netflixclone} alt="Portfolio 1" className="works-img" />
           <Link to={`/projects/${(id = 3)}`}>
             <button className="project-btn">View Project</button>
           </Link>
         </div>
-        <div className={`project ${showMore ? 'show' : ''}`}>
+        <div className={`project ${showMore ? "show" : ""}`}>
           <img src={Geminiclone} alt="Portfolio 1" className="works-img" />
           <Link to={`/projects/${(id = 4)}`}>
             <button className="project-btn">View Project</button>
           </Link>
         </div>
       </div>
-      <button className="see-more-btn" onClick={ () => setShowMore(!showMore)}>
-        {showMore? 'See Less': 'See More'}
+      <button className="see-more-btn" onClick={() => setShowMore(!showMore)}>
+        {showMore ? "See Less" : "See More"}
       </button>
     </section>
   );
